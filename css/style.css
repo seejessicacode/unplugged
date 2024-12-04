@@ -328,8 +328,113 @@ aside {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+/* 
+ * Tablet styles
+ */
+@media only screen and (min-width: 768px) {
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
 
-@media only screen and (min-width: 35em) {
+  header {
+    padding: 33px 0;
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header nav {
+    width: 20%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  aside .content-wrapper {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 40%;
+    margin: 0;
+  }
+
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
+  .features .features-items {
+    justify-content: space-evenly;
+  }
+
+  .features article {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+  }
+
+  .features .features-item-description {
+    width: 50%;
+  }
+
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews article div {
+    width: 49%;
+  }
+
+  footer .content-wrapper {
+    width: 65%;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-content div {
+    width: 50%;
+  }
+  
+  footer h4 {
+    margin-bottom: 40px;
+  }
+
+  footer .contact {
+    margin-bottom: 0px;
+  }
+
+  footer .social {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+}
+
+/* 
+ * Desktop styles
+ */
+ @media only screen and (min-width: 1200px) {
   /* Style adjustments for viewports that meet the condition */
 }
 
