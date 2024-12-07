@@ -358,7 +358,41 @@ aside {
     display: none;
   }
 
-  aside .content-wrapper {
+  footer .content-wrapper {
+    width: 65%;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-content div {
+    width: 50%;
+  }
+  
+  footer h4 {
+    margin-bottom: 40px;
+  }
+
+  footer .contact {
+    margin-bottom: 0px;
+  }
+
+  footer .social {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+  
+  /* ==========================================================================
+   Home Page
+   ========================================================================== */
+   aside .content-wrapper {
     margin: 50px 0;
     display: flex;
     justify-content: space-between;
@@ -399,34 +433,42 @@ aside {
     width: 49%;
   }
 
-  footer .content-wrapper {
-    width: 65%;
-  }
-
-  .footer-content {
+  /* ==========================================================================
+   About Page
+   ========================================================================== */
+   .mission-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-  }
-
-  .footer-content div {
-    width: 50%;
+    align-items: flex-start;
+    padding-top: 20px;
   }
   
-  footer h4 {
-    margin-bottom: 40px;
+  .mission-content p {
+    width: 45%;
   }
-
-  footer .contact {
-    margin-bottom: 0px;
+  
+  .contact-section .content-wrapper h2 {
+    width: 80%;
   }
-
-  footer .social {
+  
+  .contact-content {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
-  footer .copyright {
+  /* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+  
+  .faq-content {
+    flex-basis: 45%;
+  }
+  
+  .faq h2 {
     width: 100%;
   }
 }
