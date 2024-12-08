@@ -83,8 +83,9 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
- /* -------------------- Base Header - Footer Styles -------------------- */
-
+/* ==========================================================================
+   Mobile styles
+   ========================================================================== */
  .content-wrapper {
   outline: 3px dotted red;
   width: 90%;
@@ -157,8 +158,9 @@ footer .copyright {
   margin: 20px 0;
 }
 
-/* -------------------- Mobile Styles -------------------- */
-/* Mobile style: Homepage */
+/* ==========================================================================
+   Mobile > Homepage
+   ========================================================================== */
 .hero-area {
   display: flex;
   justify-content: center;
@@ -209,7 +211,9 @@ aside {
   margin: 20px 0;
 }
 
-/* Mobile style: About page */
+/* ==========================================================================
+   Mobile > About page
+   ========================================================================== */
 .mission {
   display: flex;
   justify-content: center;
@@ -224,7 +228,9 @@ aside {
   margin: 0;
 }
 
-/* Mobile style: FAQ page */
+/* ==========================================================================
+   Mobile > FAQ page
+   ========================================================================== */
 .faq {
   display: flex;
   justify-content: center;
@@ -328,9 +334,9 @@ aside {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-/* 
- * Tablet styles
- */
+/* ==========================================================================
+   Tablet styles
+   ========================================================================== */
 @media only screen and (min-width: 768px) {
   .content-wrapper {
     max-width: 640px;
@@ -390,7 +396,7 @@ aside {
   }
   
   /* ==========================================================================
-   Home Page
+   Tablet > Home Page
    ========================================================================== */
    aside .content-wrapper {
     margin: 50px 0;
@@ -434,7 +440,7 @@ aside {
   }
 
   /* ==========================================================================
-   About Page
+   Tablet > About Page
    ========================================================================== */
    .mission-content {
     display: flex;
@@ -458,7 +464,7 @@ aside {
   }
 
   /* ==========================================================================
-   FAQ Page
+   Tablet > FAQ Page
    ========================================================================== */
   .faq .content-wrapper {
     justify-content: space-between;
@@ -473,11 +479,74 @@ aside {
   }
 }
 
-/* 
- * Desktop styles
- */
+/* ==========================================================================
+   Desktop styles
+   ========================================================================== */
  @media only screen and (min-width: 1200px) {
   /* Style adjustments for viewports that meet the condition */
+
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  header {
+    padding: 15px 0;
+  }
+
+  footer .content-wrapper {
+    width: 100%;
+  }
+
+  .footer-content div {
+    width: 25%;
+  }
+
+  /* ==========================================================================
+   Desktop > Home Page
+   ========================================================================== */
+   .hero-area h1 {
+    width: 80%;
+   }
+
+   aside .content-wrapper {
+    justify-content: space-around;
+   }
+
+   aside .content-wrapper .form-description,
+   aside .content-wrapper .form {
+     width: 30%;
+   }
+
+   .features h2 {
+    width: 90%;
+   }
+
+   .features article {
+    flex-basis: 33%;
+  }
+
+  .reviews h2 {
+    margin-bottom: 50px;
+  }
+
+  .reviews article div {
+    width: 42%;
+  }
+
+  /* ==========================================================================
+   Desktop > About Page
+   ========================================================================== */
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
+
+  /* ==========================================================================
+   Desktop > FAQ Page
+   ========================================================================== */
+  .faq h2 {
+    width: 100%;
+  }
 }
 
 @media print,
