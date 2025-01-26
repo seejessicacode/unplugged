@@ -118,6 +118,10 @@ h2 {
   font-size: 1.875rem;
   font-weight: 500;
 }
+
+h3 {
+  margin: 20px 0;
+}
   
 h3, 
 h4 {
@@ -228,16 +232,24 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
+  background-image: url("../img/unplugged-retreat.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
 }
 
 aside {
   display: flex;
   justify-content: center;
+  background-color: #527158;
 }
 
 .features {
   display: flex;
   justify-content: center;
+  background-image: url("../img/unplugged-retreat-features.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .features h2 {
@@ -268,6 +280,7 @@ aside {
 .reviews {
   display: flex;
   justify-content: center;
+  background-color: #2a423a;
 }
 
 /* duplicate to .faq h2 */
@@ -278,7 +291,7 @@ aside {
 
 .reviews h3 {
   width: 55%;
-  margin: 20px 0;
+  /* margin: 20px 0; */
 }
 
 /* ==========================================================================
@@ -287,11 +300,13 @@ aside {
 .mission {
   display: flex;
   justify-content: center;
+  background-color: #527158;
 }
 
 .contact-section {
   display: flex;
   justify-content: center;
+  background-color: #2a423a;
 }
 
 .contact-content p {
@@ -304,6 +319,7 @@ aside {
 .faq {
   display: flex;
   justify-content: center;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -326,6 +342,32 @@ aside {
 
 .faq-content h4 {
   line-height: 1.5rem;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* ==========================================================================
@@ -443,6 +485,10 @@ aside {
     justify-content: space-between;
   }
 
+  header a {
+    width: 30%;
+  }
+
   header nav {
     width: 20%;
   }
@@ -494,6 +540,9 @@ aside {
   /* ==========================================================================
    Tablet > Home Page
    ========================================================================== */
+   .hero-area {
+    height: 600px;
+  }
    aside .content-wrapper {
     margin: 50px 0;
     display: flex;
