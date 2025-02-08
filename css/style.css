@@ -541,6 +541,10 @@ input[type=button] {
     flex-direction: column;
   }
 
+  footer .social-icons {
+    width: 100%;
+  }
+
   footer .copyright {
     width: 100%;
   }
@@ -674,6 +678,10 @@ input[type=button] {
 
   .footer-content div {
     width: 25%;
+  }
+
+  footer .social-icons {
+    width: 100%;
   }
 
   /* ==========================================================================
