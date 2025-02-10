@@ -523,7 +523,7 @@ input[type=button] {
     align-items: center;
   }
 
-  .footer-content div {
+  .footer-content > div {
     width: 50%;
   }
   
@@ -539,10 +539,6 @@ input[type=button] {
   footer .social {
     display: flex;
     flex-direction: column;
-  }
-
-  footer .social-icons {
-    width: 100%;
   }
 
   footer .copyright {
@@ -676,12 +672,8 @@ input[type=button] {
     width: 100%;
   }
 
-  .footer-content div {
+  .footer-content > div {
     width: 25%;
-  }
-
-  footer .social-icons {
-    width: 100%;
   }
 
   /* ==========================================================================
