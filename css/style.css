@@ -279,10 +279,11 @@ aside {
 
 .features .features-items article .fontawesome-icon {
   font-size: 3.75rem;
+  margin: 0;
 }
 
-.features p {
-  margin: 0;
+.features .features-item-description {
+  margin-top: 40px;
 }
 
 .reviews {
@@ -580,7 +581,8 @@ input[type=button] {
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 65%;
+    margin-top: 30px;
   }
 
   .reviews article {
